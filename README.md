@@ -1,6 +1,6 @@
 # Vacaciones recreativas · Jardín Infantil Pasitos de Amor
 
-Página informativa estática (un solo `index.html` + `logo.png`), publicada en Vercel:
+Página informativa estática (`index.html` + `logo.png` + fotos en `fotos/`), publicada en Vercel:
 https://vacaciones-xi.vercel.app/
 
 ## Cómo actualizar
@@ -16,6 +16,5 @@ Subir los cambios a `main` en GitHub; Vercel despliega automáticamente.
 
 ## Pendiente
 
-- Llenar precios, dirección, edades y cupos en `CONFIG`.
-- Crear una imagen `og.png` de 1200×630 y apuntar `og:image` a ella (mejor vista previa al compartir).
+- Llenar precios, edades y cupos en `CONFIG`.
 - `src/original-vivo-referencia.html` es la versión anterior publicada; se puede borrar.

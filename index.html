@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Vacaciones recreativas 2026 · Jardín Infantil Pasitos de Amor</title>
-<meta name="description" content="Cinco semanas de juego, creatividad y aventura para los pequeños. Del 18 de noviembre al 18 de diciembre de 2026 en el Jardín Infantil Pasitos de Amor. Inscripciones por WhatsApp.">
+<meta name="description" content="Cuatro semanas de juego, creatividad y aventura para los pequeños. Del 23 de noviembre al 18 de diciembre de 2026 en el Jardín Infantil Pasitos de Amor, Venecia (Bogotá). Inscripciones por WhatsApp.">
 <meta name="theme-color" content="#fffaf0">
 <link rel="icon" type="image/png" href="logo.png">
 <link rel="apple-touch-icon" href="logo.png">
@@ -15,11 +15,13 @@
 <meta property="og:locale" content="es_CO">
 <meta property="og:site_name" content="Jardín Infantil Pasitos de Amor">
 <meta property="og:title" content="Vacaciones recreativas 2026 · Pasitos de Amor">
-<meta property="og:description" content="18 nov – 18 dic · Lunes a viernes · Almuerzo opcional. ¡Escríbenos para inscribir a tu peque!">
+<meta property="og:description" content="23 nov – 18 dic · Venecia, Bogotá · Lunes a viernes · Almuerzo opcional. ¡Escríbenos para inscribir a tu peque!">
 <meta property="og:url" content="https://vacaciones-xi.vercel.app/">
-<meta property="og:image" content="https://vacaciones-xi.vercel.app/logo.png">
-<meta property="og:image:alt" content="Escudo del Jardín Infantil Pasitos de Amor">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://vacaciones-xi.vercel.app/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Niños disfrazados de vaqueros en el Jardín Infantil Pasitos de Amor">
+<meta name="twitter:card" content="summary_large_image">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -93,6 +95,19 @@ h2{font-size:clamp(28px,5vw,38px);margin-bottom:16px}
 .k0{background:var(--sun-t);color:#9a6400}.k1{background:var(--sky-t);color:#0b6f9c}.k2{background:var(--coral-t);color:#c2362b}.k3{background:var(--leaf-t);color:#2b7d46}.k4{background:var(--grape-t);color:#6a45b8}
 .holiday{background:var(--surface);border:2px dashed var(--line);border-radius:20px;padding:12px 16px;color:var(--muted);font-weight:600;margin-top:12px}
 
+/* fotos */
+.gal{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:auto auto;gap:12px}
+.gal figure{margin:0;border-radius:20px;overflow:hidden;border:3px solid var(--ink);background:var(--line)}
+.gal figure.wide{aspect-ratio:3/2}
+.gal figure.tall{grid-row:span 2}
+@media (min-width:701px){#g1{grid-column:1;grid-row:1}#g2{grid-column:1;grid-row:2}}
+.gal img{width:100%;height:100%;object-fit:cover;display:block}
+@media (max-width:700px){.gal{grid-template-columns:1fr 1fr}.gal figure.wide{grid-column:span 2}.gal figure.tall{grid-row:auto;aspect-ratio:3/4}}
+.redes{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:14px}
+.red{display:inline-flex;align-items:center;gap:8px;background:var(--surface);color:var(--ink);font-family:'Fredoka',sans-serif;font-weight:600;font-size:18px;padding:10px 20px;border-radius:999px;text-decoration:none;border:3px solid var(--ink);transition:transform .15s}
+.red:hover{transform:translateY(-2px)}
+.red svg{width:22px;height:22px}
+
 /* contacto */
 .wa{display:inline-flex;align-items:center;gap:10px;background:#25d366;color:#0b3d1e;font-family:'Fredoka',sans-serif;font-weight:600;font-size:22px;padding:16px 28px;border-radius:999px;text-decoration:none;border:3px solid var(--ink);transition:transform .15s}
 .wa:hover{transform:translateY(-2px)}
@@ -127,8 +142,8 @@ noscript .note{background:var(--coral-t);padding:14px 18px;border-radius:16px}
     <img class="logo" src="logo.png" width="96" height="120" alt="Escudo del Jardín Infantil Pasitos de Amor" fetchpriority="high">
     <span class="kicker">Jardín Infantil Pasitos de Amor</span>
     <h1><span class="c1">Vacaciones</span> <span class="c2">recreativas</span> <span class="c3">2026</span></h1>
-    <p>Cinco semanas de juego, creatividad y aventura para los pequeños de la casa. Del 18 de noviembre al 18 de diciembre.</p>
-    <div class="dates"><span class="pill">18 nov – 18 dic</span><span class="pill">Lunes a viernes</span><span class="pill">Almuerzo opcional</span></div>
+    <p>Cuatro semanas de juego, creatividad y aventura para los pequeños de la casa. Del 23 de noviembre al 18 de diciembre, en Venecia, Bogotá.</p>
+    <div class="dates"><span class="pill">23 nov – 18 dic</span><span class="pill">📍 Venecia, Bogotá</span><span class="pill">Lunes a viernes</span><span class="pill">Almuerzo opcional</span></div>
   </div>
 </header>
 
@@ -151,6 +166,16 @@ noscript .note{background:var(--coral-t);padding:14px 18px;border-radius:16px}
     </div>
   </section>
 
+  <section aria-labelledby="t-fotos">
+    <h2 id="t-fotos">Así nos divertimos</h2>
+    <div class="gal">
+      <figure class="wide" id="g1"><img src="fotos/granja.jpg" width="1400" height="933" loading="lazy" alt="Niños y profesoras disfrazados de vaqueros en el día de la granja"></figure>
+      <figure class="tall"><img src="fotos/peluca.jpg" width="933" height="1400" loading="lazy" alt="Niño con peluca de colores tocando un tambor"></figure>
+      <figure class="tall"><img src="fotos/disfraz.jpg" width="1050" height="1400" loading="lazy" alt="Profesora con antifaz y disfraz de plumas de colores"></figure>
+      <figure class="wide" id="g2"><img src="fotos/policia.jpg" width="1400" height="933" loading="lazy" alt="Niño con gorra de policía y gafas de sol amarillas"></figure>
+    </div>
+  </section>
+
   <section aria-labelledby="t-actividades">
     <h2 id="t-actividades">Actividad por día</h2>
     <div id="hoy" role="status"><div class="e" id="hoyE" aria-hidden="true"></div><div><small>Hoy en Pasitos de Amor</small><strong id="hoyT"></strong></div></div>
@@ -166,6 +191,7 @@ noscript .note{background:var(--coral-t);padding:14px 18px;border-radius:16px}
       <div class="btns">
         <a class="wa" id="waMain" target="_blank" rel="noopener"><span aria-hidden="true">💬</span> Contáctanos por WhatsApp</a>
       </div>
+      <div class="redes" id="redes"></div>
     </div>
   </section>
 
@@ -174,7 +200,7 @@ noscript .note{background:var(--coral-t);padding:14px 18px;border-radius:16px}
       <h2 id="t-info">Para tener en cuenta</h2>
       <ul id="infoList">
         <li>El martes 8 de diciembre es festivo y no hay programa.</li>
-        <li>El martes 24 de noviembre se elige entre taller de origami o desfile de huellas.</li>
+        <li>El viernes 27 de noviembre se elige entre taller de origami o desfile de huellas.</li>
         <li>Para inscribir a tu peque, escríbenos por WhatsApp.</li>
       </ul>
       <p class="where" id="where" hidden></p>
@@ -199,10 +225,10 @@ const CONFIG = {
   // Déjalos vacíos ("") para que no se muestren. Ejemplo: "$250.000"
   precioMedia: "",
   precioAlmuerzo: "",
-  direccion: "",                       // Ejemplo: "Calle 10 # 5-20, Barrio X"
+  direccion: "Venecia, Bogotá",        // Ejemplo: "Calle 10 # 5-20, Barrio X"
   mapaUrl: "",                         // Enlace de Google Maps (opcional)
-  instagram: "",                       // usuario sin @, ej: "pasitosdeamor"
-  tiktok: "",                          // usuario sin @
+  instagram: "jardinpasitosdeamor",                       // usuario sin @, ej: "pasitosdeamor"
+  tiktok: "jardinpasitosdeamor",                          // usuario sin @
   // Avisos extra para "Para tener en cuenta" (edades, cupos, qué llevar, etc.)
   avisosExtra: [
     // "Reciben niños de X a Y años.",
@@ -214,32 +240,28 @@ const CONFIG = {
 /* Fechas en formato AAAA-MM-DD. El día de la semana se calcula solo. */
 const SEMANAS = [
   ["Semana 1", [
-    ["2026-11-18", "Fiesta de bienvenida", "confetti"],
-    ["2026-11-19", "Elaboración de títeres", "mask-happy"],
-    ["2026-11-20", "Día deportivo", "soccer-ball"]]],
+    ["2026-11-23", "Fiesta de bienvenida", "confetti"],
+    ["2026-11-24", "Elaboración de títeres", "mask-happy"],
+    ["2026-11-25", "Día deportivo", "soccer-ball"],
+    ["2026-11-26", "Juegos tradicionales", "puzzle-piece"],
+    ["2026-11-27", "Taller de origami o desfile de huellas", "paw-print", "Se elige una de las dos"]]],
   ["Semana 2", [
-    ["2026-11-23", "Juegos tradicionales", "puzzle-piece"],
-    ["2026-11-24", "Taller de origami o desfile de huellas", "paw-print", "Se elige una de las dos"],
-    ["2026-11-25", "Búsqueda del tesoro", "treasure-chest"],
-    ["2026-11-26", "Taller de plastilina", "shapes"],
-    ["2026-11-27", "Mini chefsitos", "chef-hat"]]],
+    ["2026-11-30", "Búsqueda del tesoro", "treasure-chest"],
+    ["2026-12-01", "Taller de plastilina", "shapes"],
+    ["2026-12-02", "Mini chefsitos", "chef-hat"],
+    ["2026-12-03", "Eco aventura", "tree"],
+    ["2026-12-04", "Creación de coronas: ¡reyes y reinas!", "crown"]]],
   ["Semana 3", [
-    ["2026-11-30", "Eco aventura", "tree"],
-    ["2026-12-01", "Creación de coronas: ¡reyes y reinas!", "crown"],
-    ["2026-12-02", "Día de playa", "umbrella-simple"],
-    ["2026-12-03", "Mini olimpiadas", "medal"],
-    ["2026-12-04", "Pintura loca", "paint-brush"]]],
-  ["Semana 4", [
-    ["2026-12-07", "Taller de faroles", "lamp"],
-    ["2026-12-09", "Día de spa", "flower-lotus"],
-    ["2026-12-10", "Taller navideño", "snowflake"],
-    ["2026-12-11", "Neon party", "disco-ball"]],
+    ["2026-12-07", "Día de playa", "umbrella-simple"],
+    ["2026-12-09", "Mini olimpiadas", "medal"],
+    ["2026-12-10", "Pintura loca", "paint-brush"],
+    ["2026-12-11", "Taller de faroles", "lamp"]],
     "Martes 8 de diciembre: festivo, no hay programa."],
-  ["Semana 5", [
-    ["2026-12-14", "Pequeños artistas", "palette"],
-    ["2026-12-15", "Show de talentos", "microphone-stage"],
-    ["2026-12-16", "Día acuático", "drop"],
-    ["2026-12-17", "Cine", "film-slate"],
+  ["Semana 4", [
+    ["2026-12-14", "Día de spa", "flower-lotus"],
+    ["2026-12-15", "Taller navideño", "snowflake"],
+    ["2026-12-16", "Neon party", "disco-ball"],
+    ["2026-12-17", "Pequeños artistas", "palette"],
     ["2026-12-18", "Compartir navideño", "gift"]]]
 ];
 
@@ -304,6 +326,10 @@ const redes = [];
 if (CONFIG.instagram) redes.push(`<a href="https://www.instagram.com/${encodeURIComponent(CONFIG.instagram)}" target="_blank" rel="noopener">Instagram</a>`);
 if (CONFIG.tiktok) redes.push(`<a href="https://www.tiktok.com/@${encodeURIComponent(CONFIG.tiktok)}" target="_blank" rel="noopener">TikTok</a>`);
 if (redes.length) document.getElementById("social").innerHTML = "Síguenos: " + redes.join(" · ");
+const botones = [];
+if (CONFIG.instagram) botones.push(`<a class="red" href="https://www.instagram.com/${encodeURIComponent(CONFIG.instagram)}" target="_blank" rel="noopener">${ICONOS["instagram-logo"] || ""} Instagram</a>`);
+if (CONFIG.tiktok) botones.push(`<a class="red" href="https://www.tiktok.com/@${encodeURIComponent(CONFIG.tiktok)}" target="_blank" rel="noopener">${ICONOS["tiktok-logo"] || ""} TikTok</a>`);
+document.getElementById("redes").innerHTML = botones.join("");
 </script>
 </body>
 </html>
